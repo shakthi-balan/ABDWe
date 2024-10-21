@@ -600,7 +600,7 @@ section .title::after{
     height: auto;
     border-radius: 7%;
     
-    border: 7px solid #a0dd9d;
+    border: 3px solid #4b4b4b;
 }
 
 #items2{
