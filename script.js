@@ -1,6 +1,8 @@
 $(document).ready(function(){
+    
     $(window).scroll(function(){
         // sticky navbar on scroll script
+        
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
         }else{
@@ -35,18 +37,18 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Fitness Trainer", "Martial Arts Trainer", "Yoga Trainer "],
+        strings: ["Fitness Lifestyle Coach"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing-2", {
+    //     strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
 
     // owl carousel script
     $('.carousel').owlCarousel({
@@ -68,5 +70,18 @@ $(document).ready(function(){
                 nav: false
             }
         }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const placards = document.querySelectorAll('.placard');
+    placards.forEach(placard => {
+        placard.addEventListener('click', () => {
+            // Randomize positions on click
+            const container = document.querySelector('.placard-container');
+            for (let i = container.children.length; i >= 0; i--) {
+                container.appendChild(container.children[Math.random() * i | 0]);
+            }
+        });
     });
 });
