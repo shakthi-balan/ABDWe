@@ -217,21 +217,28 @@ section .title::after{
 .home .max-width{
     margin: auto 0 auto 30px;
 }
+.home-content{
+
+    padding : 20 20 20 20;
+}
 .home .home-content .text-1{
     font-size: 27px;
 }
 .home .home-content .text-2{
+    
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
 .home .home-content .text-3{
+    background: #eeeaea;
+    color: #000;
     font-size: 40px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #a0dd9d;
-    font-weight: 500;
+    color: #080f08;
+    font-weight: 200;
 }
 .home .home-content a{
     display: inline-block;
